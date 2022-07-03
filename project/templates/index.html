@@ -1,0 +1,282 @@
+<html>
+<head>
+	<title> </title>
+	<style>
+		*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	}
+	.topmenu{
+		width: 100%;
+		height: 150px;
+		position: relative;
+		overflow:  hidden;
+		background-color:darkorange;
+		text-align: center;
+	}
+nav{
+	width: 80%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	flex-basis: 0%;
+}
+.logo img{
+	width: 120px;
+	height: 120px;
+	margin-left: 0px;
+}
+.menu{
+	color: green;
+	flex: 1%;
+	text-align: right;
+}
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+.menu ul li a {
+	color: black;
+	text-decoration: none;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: inline-block;
+}
+
+.map iframe{
+	width: 100%;
+	height: 400px;
+}
+.block{
+	background-color: black;
+	width: 100%;
+	height: 500px;
+}
+.block1{
+	background-image: url("https://i.ibb.co/GPvDhh5/2.png");
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+.block1 h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+.block1 h3{
+	text-align: center;
+	color: black;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.block1 p{
+	text-align: center;
+	color: green;
+	font-family: monospace;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px #000000;
+}
+.block2{
+	background-image: url("https://i.ibb.co/WpYYrK7/3.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.block3{
+	float: top;
+	background-color: gray;
+	width: 100%;
+	height: 650px;
+}
+.block3_left{
+	text-align: center;
+	float: left;
+	background-color: black;
+	width: 50%;
+	height: 550;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+.block3_left h1{
+	color: grey;
+}
+.block3_left table {
+	margin-left: 180px;
+	margin-top: 50px;
+	color: grey;
+	font-size: 20px;
+	font-family: fantasy;
+}
+.block3_left td {
+	align-items: center;
+	height: 30px;
+	width: 180px;
+}
+.block3_right{
+	float: left;
+	width: 40%;
+	height: 550px;
+}
+.block3_right img{
+	margin-top: 50px;
+	height: 550px;
+}
+.block4{
+	background-image: url("https://i.ibb.co/KVvRyzJ/5.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.block4 h1,h4,a{
+	text-align: center;
+	color: black;
+}
+	</style>
+</head>
+<body>
+		<div class="topmenu">
+			<nav>
+				<div class="logo">
+					<img src="https://i.ibb.co/7Kbz5Dq/logo.jpg">
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">WORKOUT</a></li>
+						<li><a href="#">PLANS</a></li>
+						<li><a href="#supp_com">COMMUNITY</a></li>
+						<li><a href="#store">STORE</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#">ACCOUNT</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="block">
+			<div class="block1">
+				<h3 is="about"><p><br>Feel Great.<br>Body and Mind.<br>TPH<br>Get a Jump on your day</p></h3>
+				<h3><br><br>Choose from hundreds of workouts, healthy recipes, 
+				relaxing meditations, and expert articles, for a whole 
+				body and mind approach to feeling great.Regular exercise and physical activity promotes strong muscles and bones. It improves respiratory, cardiovascular health, and overall health. Staying active can also help you maintain a healthy weight, reduce your risk for type 2 diabetes, heart disease, and reduce your risk for some cancers.
+				</h3>
+			</div>
+		</div>
+		<div class="block3">
+			<div class="block3_left">
+				<h1 id="store"><br>WANNA TRY SAMPLE PRODUCT?</h1>
+				<table>
+        			<form>
+            			<tr>
+                			<td><label for="name">Name</label></td>
+                			<td><input type="text" id="name" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="email">Email</label></td>
+                			<td><input type="email" id="email" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="contactnum">Contact No.</td>
+                			<td><input type="contactnum" id="contactnum" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="Height (in cm)">Height</label></td>
+                			<td><input type="text" id="height" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="Weight(in Kgs)">Weight</label></td>
+                			<td><input type="text" id="weight" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="Address">Address</label></td>
+                			<td><input type="address" id="Address" /></td>
+            			</tr>
+            			<tr>
+                			<td><label for="">Select Gender</label></td>
+                				<td><input type="radio" id="male" value="male">
+  									<label for="html" style="font-size: 15px">MALE</label>
+  									<input type="radio" id="female" value="female">
+  									<label for="female"style="font-size: 15px">FEMALE</label></td>
+            			</tr>
+           				<tr>
+                			<td><label for="">Select Weight Type</label></td>
+                			<td><input type="radio" id="gain" value="wgain">
+  								<label for="gain" style="font-size: 15px">GAIN</label>
+  								<input type="radio" id="loss" value="loss">
+  								<label for="loss" style="font-size: 15px">LOSS</label></td>
+            			</tr>
+            			<tr>
+                			<td> <label for="birthday">Birthday</label></td>
+                			<td> <input style="width:130px;"type="date" id="birthday" name="birthday">
+            			</tr>
+            			<tr>
+                			<td><label for="color1">Select color</label></td>
+                			<td><input style="width:100px;" type="color" id="color1" name="color1" value="#ff0000"></td>
+            			</tr>
+            			<tr>
+                			<td></td>
+                			<td></td>
+            			</tr>
+            			<tr>
+                			<button type="submit" name="submit">Submit</button>
+            			</tr>
+        			</form>
+    			</table>
+			</div>
+			<div class="block3_right">
+				<img src="https://i.ibb.co/7g3199z/4.webp">
+			</div>
+		</div>
+		<div class="block4">
+			<h1 id="supp_com"><br>Supportive Community</h1>
+			<h4><br><br>Stay motivated and engaged with a little help from a<br>supportive community of other members.</h4><br>
+			<h4><a href="#">Become a Member</a></h4>
+		</div>
+		<div class="block2"></div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.9682785746867!2d78.52345878810037!3d17.369837599251937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98f70f743f0d%3A0x568b24ad9c431723!2s6-83%2F1%2C%20Bhavani%20Nagar%2C%20Hanumannagar%2C%20Krishna%20Nagar%2C%20Dilsukhnagar%2C%20Hyderabad%2C%20Telangana%20500060!5e0!3m2!1sen!2sin!4v1654587425839!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</body>
+</html>

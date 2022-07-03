@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    
+    <h1>RECORDS</h1>
+    
+    <table>
+    <tr>
+        <th >S.NO</th>
+        <th >MOVIE NAME</th>
+        <th >RATING</th>
+        <th >DELETE</th>
+    </tr>
+    {% for x in mymembers %}
+    <tr>
+        <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+             
+        <td>{{ x.MOVIE_NAME }}</td>       
+        
+        <td>{{ x.RATING }}</td>
+        
+        <td><a href="delete/">delete</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+
+    <p>
+
+    </p>
+</body>
+</html>

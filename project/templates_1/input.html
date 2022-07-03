@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BOOK MY SHOW</title>
+    <style>
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
+</head>
+<body>
+   
+<div class="center">
+    <h1 style="text-align: center;">BOOK MY SHOW</h1>
+    {% if m_list %}
+    <table>
+    <thead>
+        <th>MOVIE</th>
+        <th>HERO</th>
+        <th>HEROINE</th>
+        <th>DIRECTOR</th>
+        <th>RELEASE DATE</th>
+        <th>RATING</th>        
+        <th>IMAGE</th>
+    </thead>
+    {% for mv in m_list %}
+    <tr>
+        <td>{{mv.MOVIE_NAME}}</td>
+        <td>{{mv.HERO_NAME}}</td>
+        <td>{{mv.HEROINE_NAME}}</td>
+        <td>{{mv.DIRECTOR}}</td>
+        <td>{{mv.RELEASE_DATE}}</td>
+        <td>{{mv.RATING}}</td>             
+    </tr>
+    {% endfor %}    
+    </table>
+    {% else %}
+    <p>no movies</p>
+    {% endif %}
+</div>
+    
+</body>
+</html>
